@@ -1,5 +1,10 @@
 # 指定IP的外国网站
 
+# OpenAI
+DOMAIN-KEYWORD,openai
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chat.openai.com
+
 # Netflix
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netflix.net
@@ -18,10 +23,4 @@ DOMAIN-SUFFIX,nflximg.com
 DOMAIN-SUFFIX,nflximg.net
 DOMAIN-SUFFIX,nflxso.net
 DOMAIN-SUFFIX,nflxvideo.net
-# 国外域名关键字
-
-DOMAIN-KEYWORD,openai
-DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,chat.openai.com
-
 
