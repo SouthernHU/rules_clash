@@ -1,6 +1,7 @@
 # 学术网站
 # 国外域名关键字
 DOMAIN-KEYWORD,webofscience
+DOMAIN-KEYWORD,clarivate
 DOMAIN-SUFFIX,sciencedirect.com
 DOMAIN-SUFFIX,springer.com
 DOMAIN-SUFFIX,asme.com
