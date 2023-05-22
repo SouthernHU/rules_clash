@@ -4,8 +4,6 @@
 DOMAIN-KEYWORD,openai
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chat.openai.com
-
-# Netflix
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netflix.net
 DOMAIN-SUFFIX,netflixdnstest0.com
