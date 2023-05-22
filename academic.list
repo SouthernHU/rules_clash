@@ -1,1 +1,23 @@
-
+# 学术网站
+# 国外域名关键字
+DOMAIN-KEYWORD,webofscience.com
+DOMAIN-SUFFIX,sciencedirect.com
+DOMAIN-SUFFIX,springer.com
+DOMAIN-SUFFIX,asme.com
+DOMAIN-SUFFIX,ieee.com
+DOMAIN-SUFFIX,kns.cnki.net
+DOMAIN-SUFFIX,cnki.net
+DOMAIN-SUFFIX,nature.com
+DOMAIN-SUFFIX,idp.xjtu.edu.cn
+DOMAIN-KEYWORD,xjtu.edu.cn
+DOMAIN-SUFFIX,auth.elsevier.com
+DOMAIN-SUFFIX,sage.cnpereading.com
+DOMAIN-SUFFIX,www.mdpi.com
+DOMAIN-KEYWORD,webofknowledge.com
+DOMAIN-KEYWORD,sagepub.com
+DOMAIN-KEYWORD,dl.acm.org
+DOMAIN-KEYWORD,chn.oversea.cnki.net
+DOMAIN-KEYWORD,asme.org
+DOMAIN-KEYWORD,org.xjtu.edu.cn
+DOMAIN-KEYWORD,auth.elsevier.com
+DOMAIN-SUFFIX,bilibili.com
