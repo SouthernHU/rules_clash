@@ -1,7 +1,6 @@
 # 学术网站
 # 国外域名关键字
-DOMAIN-KEYWORD,webofscience
-DOMAIN-SUFFIX,clarivate.com
+
 DOMAIN-SUFFIX,sciencedirect.com
 DOMAIN-SUFFIX,springer.com
 DOMAIN-SUFFIX,asme.com
@@ -14,8 +13,17 @@ DOMAIN-KEYWORD,xjtu
 DOMAIN-SUFFIX,elsevier.com
 DOMAIN-KEYWORD,sage
 DOMAIN-SUFFIX,mdpi.com
+# WOS
+DOMAIN-KEYWORD,webofscience
+DOMAIN-KEYWORD,webofknowledge
+DOMAIN-KEYWORD,clarivate
+DOMAIN-SUFFIX,webofscience.com
 DOMAIN-SUFFIX,webofknowledge.com
+DOMAIN-SUFFIX,clarivate.com
+# sagepub
 DOMAIN-SUFFIX,sagepub.com
+DOMAIN-KEYWORD,sagepub
+
 DOMAIN-SUFFIX,acm.org
 DOMAIN-SUFFIX,cnki.net
 DOMAIN-SUFFIX,asme.org
