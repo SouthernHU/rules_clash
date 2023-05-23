@@ -2,7 +2,7 @@
 
 # 西交
 DOMAIN-KEYWORD,xjtu
-IP-CIDR,10.184.6.32
+DOMAIN-SUFFIX,edu.cn
 # 学术网站
 DOMAIN-SUFFIX,sciencedirect.com
 DOMAIN-SUFFIX,springer.com
