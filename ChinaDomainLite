@@ -1,0 +1,14 @@
+# 国内常用网站
+GEOIP,CN
+DOMAIN-KEYWORD,bilibili
+DOMAIN-KEYWORD,taobao
+DOMAIN-KEYWORD,alipay
+DOMAIN-KEYWORD,xiaohongshu
+DOMAIN-KEYWORD,douyin
+DOMAIN-KEYWORD,zhihu
+DOMAIN-KEYWORD,tencent
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,apple.com.cn
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,feishu.com
