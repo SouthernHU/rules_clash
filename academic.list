@@ -1,8 +1,9 @@
-# 常用网站精简版
+# 学术网站
 
 # 西交
 DOMAIN-KEYWORD,xjtu
 DOMAIN-SUFFIX,idp.xjtu.edu.cn
+IP-CIDR,10.184.6.32,no-resolve
 DOMAIN-SUFFIX,edu.cn
 # 学术网站
 DOMAIN-SUFFIX,sciencedirect.com
