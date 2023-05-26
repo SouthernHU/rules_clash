@@ -1,4 +1,4 @@
-# 国内常用网站
+# 国内其他常用
 GEOIP,CN
 DOMAIN-KEYWORD,bilibili
 DOMAIN-KEYWORD,taobao
@@ -12,3 +12,5 @@ DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,apple.com.cn
 DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,feishu.com
+DOMAIN-KEYWORD,baidu
+DOMAIN-SUFFIX,amap.com
