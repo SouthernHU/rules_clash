@@ -5,6 +5,7 @@ DOMAIN-KEYWORD,facebook
 DOMAIN-KEYWORD,instagram
 DOMAIN-KEYWORD,discord
 DOMAIN-KEYWORD,github
+DOMAIN-SUFFIX,deepl.com
 # Telegram
 #PROCESS-NAME,Telegram.exe
 #PROCESS-NAME,org.telegram.messenger
