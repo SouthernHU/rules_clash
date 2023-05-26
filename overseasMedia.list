@@ -31,6 +31,16 @@ DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netflix.net
 DOMAIN-SUFFIX,netflixdnstest0.com
 DOMAIN-SUFFIX,netflixdnstest1.com
+
+# AppleNews
+USER-AGENT,AppleNews*
+USER-AGENT,com.apple.news*
+DOMAIN,gspe1-ssl.ls.apple.com
+
+# AppleTV
+DOMAIN,np-edge.itunes.apple.com
+DOMAIN,play-edge.itunes.apple.com
+DOMAIN-SUFFIX,tv.apple.com
 DOMAIN-SUFFIX,netflixdnstest2.com
 DOMAIN-SUFFIX,netflixdnstest3.com
 DOMAIN-SUFFIX,netflixdnstest4.com
