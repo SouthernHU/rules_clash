@@ -5,4 +5,5 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chat.openai.com
 # NewBing
 DOMAIN-SUFFIX,bing.com/new
+DOMAIN-KEYWORD,bing
 
