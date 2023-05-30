@@ -54,3 +54,6 @@ DOMAIN-SUFFIX,nflximg.com
 DOMAIN-SUFFIX,nflximg.net
 DOMAIN-SUFFIX,nflxso.net
 DOMAIN-SUFFIX,nflxvideo.net
+
+# Spotify
+DOMAIN-SUFFIX,spotify.com
