@@ -2,6 +2,16 @@
 
 本规则结合科研狗的日常需求，并针对XJTU校内规则进行优化。同时针对当下火热的ChatGPT和newBing工具进行规则补充。流程如下：
 
+| 文件                                                         | 默认 | 去广告 |
+| ------------------------------------------------------------ | ---- | ------ |
+| [ipAssigned.list](https://raw.githubusercontent.com/SouthernHU/rules_clash/main/ipAssigned.list) | 代理 |        |
+| [onlybanAD.acl](https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Acl/onlybanAD.acl) | 代理 | 是     |
+| [nobanAD.acl](https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Acl/nobanAD.acl) | 代理 | 否     |
+| [backcn-banAD.acl](https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Acl/backcn-banAD.acl) | 代理 | 是     |
+| [gfwlist-banAD.acl](https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Acl/gfwlist-banAD.acl) | 直连 | 是     |
+
+
+
 1. 🖧  指定IP网站
 
    本规则存储在：ipAssigned.list。主要针对一些需要指定IP的网站如ChatGPT和newBing设置指定地区节点。
