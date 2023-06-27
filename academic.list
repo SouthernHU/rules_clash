@@ -30,5 +30,6 @@ DOMAIN-SUFFIX,asme.org
 DOMAIN-KEYWORD,elsevier
 DOMAIN-SUFFIX,scientific.net
 DOMAIN-KEYWORD,heinonline
+DOMAIN-SUFFIX,doi.org
 # Zotero
 DOMAIN-KEYWORD,zotero
