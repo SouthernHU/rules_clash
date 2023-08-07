@@ -1,8 +1,6 @@
-# 规则说明
+## 规则说明
 
-本规则结合科研狗的日常需求，并针对XJTU校内规则进行优化。同时针对当下火热的ChatGPT和newBing工具进行规则补充。流程如下：
-
-
+本规则结合科研狗的日常需求，并针对XJTU校内规则进行优化。同时针对当下火热的ChatGPT和newBing工具进行规则补充。分流规则如下：
 
 1. 🖧  指定IP网站
 
@@ -56,3 +54,18 @@
 
 9. 🐟 漏网之鱼
 
+## 使用方法
+### Clash安装
+使用 [Clash](https://github.com/Dreamacro/clash) 作为代理工具，此工具支持 SS/SSR/V2Ray/Trojan/HTTP/HTTPS/SOCKS 等多种协议。不同平台的客户端如下：
+  + Windows: [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg/releases)
+  + Mac: [ClashX](https://github.com/yichengchen/clashX/releases)（推荐） 或 [Clash for Windows](https://github.com/Fndroid/clash_for_windows_pkg/releases)
+  + Android/HarmonyOS: [Clash for Android](https://github.com/Kr328/ClashForAndroid/releases)
+
+### 转换订阅链接
+目的：需要将机场提供的订阅链接按照本项目规则处理后重新生成clash订阅链接
+工具：不放心安全性可以使用 [subconverter](https://github.com/tindy2013/subconverter)。subconverter自行搭建服务，一般用户推荐直接使用[ACL4SSR在线订阅转换工具](https://acl4ssr-sub.github.io/)
+步骤：
++ 打开[ACL4SSR在线订阅转换工具](https://acl4ssr-sub.github.io/)
++ 粘贴机场提供的订阅链接 ，点击生成订阅链接即可生成转换后的订阅链接
++ 在 Clash 客户端中添加上一步得到的链接。以 Windows 版为例，点击 Profiles，将链接粘贴到上方的框中，点击 Download 按钮
++ 推荐设置为每小时更新一次，在配置上右键 - Settings，设置 Update Interval (hour) 为 1
