@@ -6,4 +6,7 @@ DOMAIN-SUFFIX,chat.openai.com
 # NewBing
 DOMAIN-SUFFIX,bing.com/new
 DOMAIN-KEYWORD,bing
-
+# Claude
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-KEYWORD,anthropic
+DOMAIN-KEYWORD,claude
