@@ -15,6 +15,10 @@ DOMAIN-SUFFIX,feishu.com
 DOMAIN-KEYWORD,baidu
 DOMAIN-SUFFIX,amap.com
 DOMAIN-KEYWORD,yuque
+# NAME: XiaoHongShu
+DOMAIN-SUFFIX,fengkongcloud.com
+DOMAIN-SUFFIX,xhscdn.com
+DOMAIN-SUFFIX,xiaohongshu.com
 # Git
 DST-PORT,22
 # steam直连部分
