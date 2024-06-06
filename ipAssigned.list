@@ -1,6 +1,8 @@
 # 指定IP的外国网站
 # OpenAI
 DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,chatgpt
+DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chat.openai.com
 # ChatGPT第三方Windows客户端——https://github.com/lencx/ChatGPT
