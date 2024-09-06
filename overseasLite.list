@@ -5,7 +5,11 @@ DOMAIN-KEYWORD,facebook
 DOMAIN-KEYWORD,instagram
 DOMAIN-KEYWORD,discord
 DOMAIN-KEYWORD,github
+DOMAIN-KEYWORD,youtube
+DOMAIN-KEYWORD,google
 DOMAIN-SUFFIX,deepl.com
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,google-analytics.com
 # Telegram
 #PROCESS-NAME,Telegram.exe
 #PROCESS-NAME,org.telegram.messenger
