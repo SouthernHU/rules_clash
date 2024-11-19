@@ -22,6 +22,8 @@ DOMAIN-SUFFIX,xiaohongshu.com
 # Git
 DST-PORT,22
 # steam直连部分
+DOMAIN-SUFFIX,steamcontent.com
+DOMAIN-KEYWORD,steamcontent
 api.steampowered.com
 *.cm.steampowered.com
 *.steamserver.net
