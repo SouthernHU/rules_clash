@@ -2,7 +2,8 @@
 
 # 极速机场
 DOMAIN,xn--mes358acgm99l.com
-
+# 火星联盟
+DOMAIN-KEYWORD,hxlm
 # Clash规则更新
 DOMAIN-SUFFIX,api.dler.io
 # perplexityAi
