@@ -1,5 +1,8 @@
 # 自定义对GFW的补充
 
+# 极速机场
+DOMAIN,xn--mes358acgm99l.com
+
 # Clash规则更新
 DOMAIN-SUFFIX,api.dler.io
 # perplexityAi
