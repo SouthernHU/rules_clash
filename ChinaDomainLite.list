@@ -21,6 +21,8 @@ DOMAIN-SUFFIX,xhscdn.com
 DOMAIN-SUFFIX,xiaohongshu.com
 # Git
 DST-PORT,22
+# 微软远程桌面
+DST-PORT,3389
 # steam直连部分
 DOMAIN-SUFFIX,steamcontent.com
 DOMAIN-KEYWORD,steamcontent
