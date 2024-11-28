@@ -33,3 +33,5 @@ DOMAIN-KEYWORD,heinonline
 DOMAIN-SUFFIX,doi.org
 # Zotero
 DOMAIN-KEYWORD,zotero
+# Elsevier投稿系统
+DOMAIN-SUFFIX,editorialmanager.com
