@@ -30,3 +30,6 @@ DOMAIN-SUFFIX,tv.apple.com
 # 电子书网站
 DOMAIN-KEYWORD,libgen
 DOMAIN-KEYWORD,zlibrary
+# Arc浏览器
+DOMAIN-KEYWORD,arc
+DOMAIN-SUFFIX,arc.net
