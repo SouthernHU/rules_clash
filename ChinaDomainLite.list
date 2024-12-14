@@ -104,6 +104,18 @@ IP-CIDR,162.254.192.0/21
 IP-CIDR,185.25.182.0/23
 IP-CIDR,190.217.32.0/22
 IP-CIDR,208.64.200.0/22
-
+# Steam CDN
+# 白云山
+DOMAIN,st.dl.eccdnx.com(,no-resolve)
+DOMAIN,st.dl.bscstorage.net(,no-resolve)
+# 新流云(原金山云)(支持ipv6)
+DOMAIN,dl.steam.clngaa.com(,no-resolve)
+# 网宿
+DOMAIN,cdn-ws.content.steamchina.com(,no-resolve)
+# 阿里云(支持ipv6)
+DOMAIN,cdn-ali.content.steamchina.com(,no-resolve)
+DOMAIN,xz.pphimalayanrt.com(,no-resolve)
+DOMAIN,lv.queniujq.cn(,no-resolve)
+DOMAIN,alibaba.cdn.steampipe.steamcontent.com(,no-resolve)
 
 
