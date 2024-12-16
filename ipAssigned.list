@@ -44,7 +44,8 @@ DOMAIN-SUFFIX,oaiusercontent.com
 
 # NewBing
 DOMAIN-SUFFIX,bing.com/new
-DOMAIN-KEYWORD,bing
+DOMAIN-KEYWORD,copilot
+DOMAIN-SUFFIX,copilot.microsoft.com
 
 # Claude
 DOMAIN-SUFFIX,anthropic.com
