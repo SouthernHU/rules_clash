@@ -48,3 +48,5 @@ IP-CIDR,209.85.233.188/32,no-resolve
 # LTT
 https://linustechtips.com/
 https://www.lttstore.com/
+# 有限元前处理开源软件prepomax
+DOMAIN-KEYWORD,prepomax
