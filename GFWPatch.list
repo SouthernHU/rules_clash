@@ -9,7 +9,7 @@ DOMAIN-SUFFIX,api.dler.io
 # perplexityAi
 DOMAIN-KEYWORD,perplexity
 # Clash verge
-DOMAIN-KEYWORD,clashverge
+DOMAIN-SUFFIX,clashverge.dev
 # 虚空终端文档
 DOMAIN-SUFFIX,wiki.metacubex.one
 # 内容：GoogleFCM 谷歌推送服务
