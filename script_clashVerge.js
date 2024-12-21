@@ -40,7 +40,7 @@ const dnsConfig = {
 const ruleProviderCommon = {
   type: "http",
   format: "yaml",
-  interval: 86400,
+  interval: 1800, //半小时更新一次规则
 };
 // 规则集配置
 const ruleProviders = {
@@ -101,7 +101,7 @@ const ruleProviders = {
     path: "./rulesets/southernhu/GFWPatch.list",
   },
 
-  
+
 
 };
 // 规则
@@ -113,23 +113,23 @@ const rules = [
   "DOMAIN-SUFFIX,github.io,节点选择", // Github Pages
   "DOMAIN,v2rayse.com,节点选择", // V2rayse节点工具
   // 其他规则
-  "GEOIP,LAN,全局直连,no-resolve",
-  "GEOIP,CN,全局直连,no-resolve",
+  "GEOIP,LAN,DIRECT,no-resolve",
+  "GEOIP,CN,DIRECT,no-resolve",
   //自定义规则
-  
+
   "RULE-SET,academic,学术网站",
   "RULE-SET,ChinaDomainLite,国内常用",
   "RULE-SET,ipAssigned,GPTs",
   "RULE-SET,overseasLite,海外常用",
+  "RULE-SET,GFWPatch,海外常用",
   "RULE-SET,overseasMedia,海外流媒体",
   "RULE-SET,overSeaFull_ACL4SSR,海外完整",
-  "RULE-SET,GFWPatch,海外补充",
   "RULE-SET,ADBlocking,全局拦截",
-  
+
 ];
 // 代理组通用配置
 const groupBaseOption = {
-  interval: 300,
+  interval: 10,
   timeout: 3000,
   url: "https://www.google.com/generate_204",
   lazy: true,
@@ -147,7 +147,10 @@ function main(config) {
   if (proxyCount === 0 && proxyProviderCount === 0) {
     throw new Error("配置文件中未找到任何代理");
   }
-
+  // GPT区域
+  const gptRegion = "(US|🇺🇸|美国|SG|🇸🇬|新加坡|KR|🇰🇷|韩国|AU|澳大利亚|TW|🇹🇼|台湾|日本|🇯🇵|JP|德国|🇩🇪|DE)(?!.*(0\.1x|x0\.1))";
+  // 速度筛选
+  const fastFillter = "x3|x2|2x|3x|1.5x|x1.5";
   // 覆盖原配置中DNS配置
   config["dns"] = dnsConfig;
 
@@ -157,23 +160,21 @@ function main(config) {
       ...groupBaseOption,
       name: "学术网站",
       type: "select",
-      proxies: ["全局直连","延迟选优","负载均衡(散列)", "负载均衡(轮询)"],
-      "include-all": true,
+      proxies: ["DIRECT"],
+      "include-all": false,
       icon: "https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/refs/heads/main/icon/applebooks.png",
     },
-    
+
     {
       ...groupBaseOption,
+      // 支持的国家中选择延迟最低的，并排除低倍速率节点
       name: "GPTs",
-      type: "select",
-      proxies: [
-        "节点选择",
-        "延迟选优",
-        "故障转移",
-        "负载均衡(散列)",
-        "负载均衡(轮询)",
-        "DIRECT",
-      ],
+      "type": "url-test",
+      "tolerance": 100,  // 延迟容忍度，超过150ms的节点将被淘汰
+      "fallback": 10,  // 备用节点数量，保留延迟最低的10个节点
+      "interval": 5,  // 每5秒测速一次
+      // 美国|新加坡|韩国|澳大利亚|台湾|日本|德国
+      "filter": gptRegion,
       "include-all": true,
       icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/chatgpt.svg",
     },
@@ -181,62 +182,41 @@ function main(config) {
       ...groupBaseOption,
       name: "国内常用",
       type: "select",
-      proxies: ["全局直连","延迟选优","负载均衡(散列)", "负载均衡(轮询)"],
-      "include-all": true,
+      proxies: ["DIRECT"],
+      "include-all": false,
       icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/cn.svg",
     },
     {
       ...groupBaseOption,
+      // 高速节点中选择延迟最低的
       name: "海外常用",
-      type: "select",
-      proxies: [
-        "节点选择",
-        "延迟选优",
-        "故障转移",
-        "负载均衡(散列)",
-        "负载均衡(轮询)",
-        "DIRECT",
-      ],
+      "type": "url-test",
+      "tolerance": 100,  // 延迟容忍度，超过150ms的节点将被淘汰
+      "fallback": 10,  // 备用节点数量，保留延迟最低的10个节点
+      "interval": 5,  // 每300秒测速一次
+      "filter": fastFillter, // 匹配高速节点
       "include-all": true,
       icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/google.svg",
     },
     {
       ...groupBaseOption,
+      // 高速节点中进行负载均衡
       name: "海外流媒体",
-      type: "select",
-      proxies: [
-        "节点选择",
-        "延迟选优",
-        "故障转移",
-        "负载均衡(散列)",
-        "负载均衡(轮询)",
-        "DIRECT",
-      ],
+      type: "load-balance",
+      strategy: "consistent-hashing",
       "include-all": true,
+      "filter": fastFillter, // 匹配高速节点
       icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/youtube.svg",
     },
     {
       ...groupBaseOption,
+      // 高速节点中进行负载均衡
       name: "海外完整",
-      type: "select",
-      proxies: [
-        "节点选择",
-        "延迟选优",
-        "故障转移",
-        "负载均衡(散列)",
-        "负载均衡(轮询)",
-        "DIRECT",
-      ],
+      type: "load-balance",
+      strategy: "consistent-hashing",
+      "filter": fastFillter, // 匹配高速节点
       "include-all": true,
       icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/World_Map.png",
-    },
-    {
-      ...groupBaseOption,
-      name: "海外补充",
-      type: "select",
-      proxies: ["全局直连","延迟选优","负载均衡(散列)", "负载均衡(轮询)"],
-      "include-all": false,
-      icon: "https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/refs/heads/main/icon/oracle.png",
     },
     {
       ...groupBaseOption,
@@ -248,16 +228,19 @@ function main(config) {
     {
       ...groupBaseOption,
       name: "节点选择",
-      type: "select",
+      "type": "url-test",
       proxies: ["延迟选优", "故障转移", "负载均衡(散列)", "负载均衡(轮询)"],
       "include-all": true,
+      url: "http://www.gstatic.com/generate_204",
+      interval: 5,
       icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/adjust.svg",
-    },    
+    },
     {
       ...groupBaseOption,
       name: "延迟选优",
       type: "url-test",
       tolerance: 100,
+      "hidden": true,
       "include-all": true,
       icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/speed.svg",
     },
@@ -266,6 +249,7 @@ function main(config) {
       name: "故障转移",
       type: "fallback",
       "include-all": true,
+      "hidden": true,
       icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/ambulance.svg",
     },
     {
@@ -274,6 +258,7 @@ function main(config) {
       type: "load-balance",
       strategy: "consistent-hashing",
       "include-all": true,
+      "hidden": true,
       icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/merry_go.svg",
     },
     {
@@ -282,22 +267,8 @@ function main(config) {
       type: "load-balance",
       strategy: "round-robin",
       "include-all": true,
+      "hidden": true,
       icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/balance.svg",
-    },
-    {
-      ...groupBaseOption,
-      name: "全局直连",
-      type: "select",
-      proxies: [
-        "DIRECT",
-        "节点选择",
-        "延迟选优",
-        "故障转移",
-        "负载均衡(散列)",
-        "负载均衡(轮询)",
-      ],
-      "include-all": true,
-      icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/link.svg",
     },
   ];
 
