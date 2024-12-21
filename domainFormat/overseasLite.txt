@@ -1,0 +1,66 @@
+# 本list存储常用的国外网站，以加快检索速度
++.google.com
++.youtube.com
++.github.com
++.wikipedia.org
++.x.com
++.twitter.com
++.facebook.com
++.instagram.com
++.discord.com
++.deepl.com
++.googleadservices.com
++.google-analytics.com
+# Telegram
+PROCESS-NAME,Telegram.exe
+PROCESS-NAME,org.telegram.messenger
++.t.me
++.tdesktop.com
++.telegra.ph
++.telegram.me
++.telegram.org
++.telesco.pe
+91.108.0.0/16
+109.239.140.0/24
+149.154.160.0/20
+2001:67c:4e8::/48
+2001:b28:f23d::/48
+2001:b28:f23f::/48
+# Apple
++.tv.apple.com
+# 电子书网站
++.libgen.is
++.zlibrary.org
++.z-lib.io
+# Arc浏览器
++.arc.net
+# Steam
++.fanatical.com
++.humblebundle.com
++.steamcommunity.com
++.steampowered.com
++.steamstatic.com
++.steam-chat.com
++.steamusercontent.com
++.valvesoftware.com
++.steamuserimages-a.akamaihd.net
++.steamcontent.com
++.steamcontent.com
++.steamchina.com
++.csgo.wmsj.cn
++.dota2.wmsj.cn
++.wmsjsteam.com
++.dl.steam.clngaa.com
++.dl.steam.ksyna.com
++.st.dl.bscstorage.net
++.st.dl.eccdnx.com
++.st.dl.pinyuncloud.com
++.steampipe.steamcontent.tnkjmec.com
++.steampowered.com.8686c.com
++.steamstatic.com.8686c.com
++.steambroadcast.akamaized.net
++.steamcdn-a.akamaihd.net
++.steamcommunity-a.akamaihd.net
++.steamstore-a.akamaihd.net
++.steamusercontent-a.akamaihd.net
++.steamuserimages-a.akamaihd.net
