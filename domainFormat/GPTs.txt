@@ -1,0 +1,51 @@
+# 指定IP的外国网站
+# OpenAI
++.chatgpt.com
++.openai.com
++.chat.openai.com
+# ChatGPT第三方Windows客户端https://github.com/lencx/ChatGPT
+PROCESS-NAME,msedgewebview2.exe
+# poe
++.poe.com
+# 风控
++.sentry.io
+# OPENAI所用到的服务相关域名，包括Google和CloudFlare的人机验证之类
++.vimeocdn.com
++.blob.core.windows.net
++.googleapis.com
++.azurefd.net
++.azureedge.net
++.cdn.cloudflare.net
++.hcaptcha.com
++.akamaized.net
++.gstatic.com
++.vimeo.com
++.googletagmanager.com
++.f7tk.com
++.doubleclick.net
++.google-analytics.com
++.intercom.io
++.statsigapi.net
++.featuregates.org
++.intercomcdn.com
++.pki.goog
++.cloudflareinsights.com
++.edgecompute.app
++.compute-pipe.com
++.stripe.network
++.gpt3sandbox.com
++.sentry.io
+# 231116新增域名
++.oaistatic.com
++.oaiusercontent.com
+# NewBing
++.bing.com/new
++.copilot.microsoft.com
+# Claude
++.anthropic.com
++.claude.ai
+# Google Gemini
++.generativelanguage.google.com
++.colab.google.com
++.apis.google.com
++.gemini.google.com；
