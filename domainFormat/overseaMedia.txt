@@ -1,7 +1,7 @@
 # 本list存储海外流媒体
 
 # YouTube
-+.youtube.*
++.youtube.com
 +.youtubei.googleapis.com
 +.yt3.ggpht.com
 +.googlevideo.com
