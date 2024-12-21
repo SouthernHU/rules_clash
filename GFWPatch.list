@@ -12,6 +12,7 @@ DOMAIN-KEYWORD,perplexity
 DOMAIN-SUFFIX,clashverge.dev
 # 虚空终端文档
 DOMAIN-SUFFIX,wiki.metacubex.one
+DOMAIN-SUFFIX,stash.wiki
 # 内容：GoogleFCM 谷歌推送服务
 # 数量：35条
 DOMAIN,alt1-mtalk.google.com
