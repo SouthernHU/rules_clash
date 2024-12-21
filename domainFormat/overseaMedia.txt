@@ -1,0 +1,50 @@
+# 本list存储海外流媒体
+
+# YouTube
++.youtube.*
++.youtubei.googleapis.com
++.yt3.ggpht.com
++.googlevideo.com
++.gvt2.com
++.withyoutube.com
++.youtu.be
++.youtube-nocookie.com
++.youtube.com
++.youtubeeducation.com
++.youtubegaming.com
++.youtubekids.com
++.yt.be
++.ytimg.com
+
+# YouTubeMusic
++.music.youtube.com
+
+# Netflix
++.netflix.com
++.netflix.net
++.netflixdnstest0.com
++.netflixdnstest1.com
+
+# AppleNews
++.gspe1-ssl.ls.apple.com
+
+# AppleTV
++.np-edge.itunes.apple.com
++.play-edge.itunes.apple.com
++.tv.apple.com
++.netflixdnstest2.com
++.netflixdnstest3.com
++.netflixdnstest4.com
++.netflixdnstest5.com
++.netflixdnstest6.com
++.netflixdnstest7.com
++.netflixdnstest8.com
++.netflixdnstest9.com
++.nflxext.com
++.nflximg.com
++.nflximg.net
++.nflxso.net
++.nflxvideo.net
+
+# Spotify
++.spotify.com
