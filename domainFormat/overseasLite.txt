@@ -2,6 +2,7 @@
 +.google.com
 +.youtube.com
 +.github.com
++.githubusercontent.com
 +.wikipedia.org
 +.x.com
 +.twitter.com
