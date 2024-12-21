@@ -57,3 +57,5 @@ DOMAIN-KEYWORD,perplexity
 +.prepomax.fr
 # Automa
 +.automa.site
+# Follow
++.follow.is
