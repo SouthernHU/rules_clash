@@ -19,6 +19,10 @@ DOMAIN-KEYWORD,yuque
 DOMAIN-SUFFIX,fengkongcloud.com
 DOMAIN-SUFFIX,xhscdn.com
 DOMAIN-SUFFIX,xiaohongshu.com
+# 地图类软件防止定位错误
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,amap.com
+DOMAIN-SUFFIX,map.qq.com
 # Git
 DST-PORT,22
 # 微软远程桌面
