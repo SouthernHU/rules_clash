@@ -8,6 +8,10 @@ DOMAIN-KEYWORD,hxlm
 DOMAIN-SUFFIX,api.dler.io
 # perplexityAi
 DOMAIN-KEYWORD,perplexity
+# Clash verge
+DOMAIN-KEYWORD,clashverge
+# 虚空终端文档
+DOMAIN-SUFFIX,wiki.metacubex.one
 # 内容：GoogleFCM 谷歌推送服务
 # 数量：35条
 DOMAIN,alt1-mtalk.google.com
