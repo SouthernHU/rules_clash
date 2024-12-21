@@ -1,5 +1,6 @@
 # 本list存储海外流媒体
-
+# Google
++.gstatic.com
 # YouTube
 +.youtube.com
 +.youtubei.googleapis.com
@@ -48,3 +49,4 @@
 
 # Spotify
 +.spotify.com
+
