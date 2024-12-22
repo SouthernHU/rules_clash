@@ -64,3 +64,5 @@ PROCESS-NAME,org.telegram.messenger
 +.steamstore-a.akamaihd.net
 +.steamusercontent-a.akamaihd.net
 +.steamuserimages-a.akamaihd.net
+# 城市天际线2
++.paradox-interactive.com
