@@ -1,6 +1,7 @@
 # 本list存储常用的国外网站，以加快检索速度
 +.google.com
 +.googleapis.com
++.google-analytics.com
 +.github.com
 +.githubusercontent.com
 +.wikipedia.org
