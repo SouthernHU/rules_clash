@@ -108,6 +108,7 @@ const ruleProviders = {
 const rules = [
   // 自定义规则
   "DOMAIN-SUFFIX,googleapis.cn,节点选择", // Google服务
+  "DOMAIN-SUFFIX,googleapis.com,节点选择", // Google服务
   "DOMAIN-SUFFIX,gstatic.com,节点选择", // Google静态资源
   "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,节点选择", // Google Play下载服务
   "DOMAIN-SUFFIX,github.io,节点选择", // Github Pages
@@ -116,7 +117,6 @@ const rules = [
   "GEOIP,LAN,DIRECT,no-resolve",
   "GEOIP,CN,DIRECT,no-resolve",
   //自定义规则
-
   "RULE-SET,academic,学术网站",
   "RULE-SET,ChinaDomainLite,国内常用",
   "RULE-SET,GPTs,GPTs",
@@ -229,7 +229,7 @@ function main(config) {
       ...groupBaseOption,
       name: "节点选择",
       "type": "url-test",
-      proxies: ["延迟选优", "故障转移", "负载均衡(散列)", "负载均衡(轮询)"],
+      proxies: ["负载均衡(散列)","延迟选优","负载均衡(轮询)","故障转移"],
       "include-all": true,
       url: "http://www.gstatic.com/generate_204",
       interval: 5,
