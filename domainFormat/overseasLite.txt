@@ -33,6 +33,55 @@ PROCESS-NAME,org.telegram.messenger
 2001:67c:4e8::/48
 2001:b28:f23d::/48
 2001:b28:f23f::/48
+# 微软
++.api.msn.com
++.api.statsig.com
++.assets.msn.com
++.browser-intake-datadoghq.com
++.chat.openai.com.cdn.cloudflare.net
++.copilot.microsoft.com
++.gateway.bingviz.microsoft.net
++.gateway.bingviz.microsoftapp.net
++.in.appcenter.ms
++.location.microsoft.com
++.odc.officeapps.live.com
++.openai-api.arkoselabs.com
++.openaicomproductionae4b.blob.core.windows.net
++.production-openaicom-storage.azureedge.net
++.r.bing.com
++.self.events.data.microsoft.com
++.services.bingapis.com
++.static.cloudflareinsights.com
++.sydney.bing.com
++.www.bing.com
++.algolia.net
++.api.microsoftapp.net
++.auth0.com
++.bing-shopping.microsoft-falcon.io
++.challenges.cloudflare.com
++.chatgpt.com
++.chatgpt.livekit.cloud
++.client-api.arkoselabs.com
++.edgeservices.bing.com
++.events.statsigapi.net
++.featuregates.org
++.host.livekit.cloud
++.identrust.com
++.intercom.io
++.intercomcdn.com
++.launchdarkly.com
++.oaistatic.com
++.oaiusercontent.com
++.observeit.net
++.openai.com
++.openaiapi-site.azureedge.net
++.openaicom.imgix.net
++.segment.io
++.sentry.io
++.stripe.com
++.turn.livekit.cloud
+24.199.123.28/32
+64.23.132.171/32
 # Apple
 +.tv.apple.com
 # 电子书网站
@@ -73,3 +122,4 @@ PROCESS-NAME,org.telegram.messenger
 +.steamuserimages-a.akamaihd.net
 # 城市天际线2
 +.paradox-interactive.com
+
