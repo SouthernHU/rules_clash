@@ -30,7 +30,6 @@ DST-PORT,3389
 +.fd.api.iris.microsoft.com
 +.microsoftonline.com
 +.aadcdn.msauth.net
-+.microsoft.com
 +.live.com
 +.sharepoint.com
 +.cn.bing.com
