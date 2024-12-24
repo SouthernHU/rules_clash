@@ -26,6 +26,11 @@
 DST-PORT,22
 # 微软远程桌面
 DST-PORT,3389
+# 微软
++.fd.api.iris.microsoft.com
++.microsoftonline.com
++.aadcdn.msauth.net
+microsoft.com
 # steam直连部分
 +.steamcontent.com
 +.api.steampowered.com
