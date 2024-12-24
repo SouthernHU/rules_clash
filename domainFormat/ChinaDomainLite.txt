@@ -32,6 +32,8 @@ DST-PORT,3389
 +.aadcdn.msauth.net
 +.microsoft.com
 +.live.com
++.sharepoint.com
++.cn.bing.com
 # steam直连部分
 +.steamcontent.com
 +.api.steampowered.com
