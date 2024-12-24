@@ -30,7 +30,8 @@ DST-PORT,3389
 +.fd.api.iris.microsoft.com
 +.microsoftonline.com
 +.aadcdn.msauth.net
-microsoft.com
++.microsoft.com
++.live.com
 # steam直连部分
 +.steamcontent.com
 +.api.steampowered.com
