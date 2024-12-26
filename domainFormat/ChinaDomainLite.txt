@@ -18,6 +18,19 @@
 +.fengkongcloud.com
 +.xhscdn.com
 +.xiaohongshu.com
+# OneDrive
+-.1drv.com
+-.livefilestore.com
+-.oneclient.sfx.ms
+-.onedrive.com
+-.onedrive.live.com
+-.photos.live.com
+-.sharepoint.com
+-.sharepointonline.com
+-.skydrive.wns.windows.com
+-.spoprod-a.akamaihd.net
+-.storage.live.com
+-.storage.msn.com
 # 地图类软件防止定位错误
 +.baidu.com
 +.amap.com
@@ -31,7 +44,6 @@ DST-PORT,3389
 +.microsoftonline.com
 +.aadcdn.msauth.net
 +.live.com
-+.sharepoint.com
 +.cn.bing.com
 # steam直连部分
 +.steamcontent.com
