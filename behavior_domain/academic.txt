@@ -1,29 +1,28 @@
-payload:
-    # 常用的直连网站
-    # 西交
-    +.xjtu.edu.cn
-    +.edu.cn
-    # 学术网站
-    +.sciencedirect.com
-    +.springer.com
-    +.asme.com
-    +.ieee.com
-    +.kns.cnki.net
-    +.cnki.net
-    +.nature.com
-    +.elsevier.com
-    +.sagepub.com 
-    +.mdpi.com
-    +.webofscience.com
-    +.webofknowledge.com
-    +.clarivate.com
-    +.acm.org
-    +.cnki.net
-    +.asme.org
-    +.scientific.net
-    +.heinonline.org
-    +.doi.org
-    # Zotero
-    +.zotero.org
-    # Elsevier投稿系统
-    +.editorialmanager.com
+# 常用的直连网站
+# 西交
++.xjtu.edu.cn
++.edu.cn
+# 学术网站
++.sciencedirect.com
++.springer.com
++.asme.com
++.ieee.com
++.kns.cnki.net
++.cnki.net
++.nature.com
++.elsevier.com
++.sagepub.com 
++.mdpi.com
++.webofscience.com
++.webofknowledge.com
++.clarivate.com
++.acm.org
++.cnki.net
++.asme.org
++.scientific.net
++.heinonline.org
++.doi.org
+# Zotero
++.zotero.org
+# Elsevier投稿系统
++.editorialmanager.com
