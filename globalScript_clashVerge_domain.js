@@ -82,14 +82,14 @@ const ruleProviders = {
   ADBlocking: {
     ...ruleProviderCommon,
     behavior: "domain",
-    format: "yaml",
+    format: "text",
     url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt",
     path: "./rulesets/southernhu/ADBlocking.txt",
   },
   overSeaFull_ACL4SSR: {
     ...ruleProviderCommon,
     behavior: "domain",
-    format: "yaml",
+    format: "text",
     url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt",
     path: "./rulesets/southernhu/proxy.yaml",
   },
