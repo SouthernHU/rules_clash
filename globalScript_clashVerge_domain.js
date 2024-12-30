@@ -48,35 +48,35 @@ const ruleProviders = {
     ...ruleProviderCommon,
     behavior: "domain",
     format: "text",
-    url: "https://raw.githubusercontent.com/SouthernHU/rules_clash/refs/heads/main/domainFormat/academic.txt",
+    url: "https://raw.githubusercontent.com/SouthernHU/rules_clash/refs/heads/main/behavior_domain/academic.txt",
     path: "./rulesets/southernhu/academic.txt",
   },
   ChinaDomainLite: {
     ...ruleProviderCommon,
     behavior: "domain",
     format: "text",
-    url: "https://raw.githubusercontent.com/SouthernHU/rules_clash/refs/heads/main/domainFormat/ChinaDomainLite.txt",
+    url: "https://raw.githubusercontent.com/SouthernHU/rules_clash/refs/heads/main/behavior_domain/ChinaDomainLite.txt",
     path: "./rulesets/southernhu/ChinaDomainLite.txt",
   },
   overseasLite: {
     ...ruleProviderCommon,
     behavior: "domain",
     format: "text",
-    url: "https://raw.githubusercontent.com/SouthernHU/rules_clash/refs/heads/main/domainFormat/overseasLite.txt",
+    url: "https://raw.githubusercontent.com/SouthernHU/rules_clash/refs/heads/main/behavior_domain/overseasLite.txt",
     path: "./rulesets/southernhu/overseasLite.txt",
   },
   GPTs: {
     ...ruleProviderCommon,
     behavior: "domain",
     format: "text",
-    url: "https://raw.githubusercontent.com/SouthernHU/rules_clash/refs/heads/main/domainFormat/GPTs.txt",
+    url: "https://raw.githubusercontent.com/SouthernHU/rules_clash/refs/heads/main/behavior_domain/GPTs.txt",
     path: "./rulesets/southernhu/GPTs.txt",
   },
   overseasMedia: {
     ...ruleProviderCommon,
     behavior: "domain",
     format: "text",
-    url: "https://raw.githubusercontent.com/SouthernHU/rules_clash/refs/heads/main/domainFormat/overseaMedia.txt",
+    url: "https://raw.githubusercontent.com/SouthernHU/rules_clash/refs/heads/main/behavior_domain/overseaMedia.txt",
     path: "./rulesets/southernhu/overseasMedia.txt",
   },
   ADBlocking: {
@@ -97,7 +97,7 @@ const ruleProviders = {
     ...ruleProviderCommon,
     behavior: "domain",
     format: "text",
-    url: "https://raw.githubusercontent.com/SouthernHU/rules_clash/refs/heads/main/domainFormat/GFWPatch.txt",
+    url: "https://raw.githubusercontent.com/SouthernHU/rules_clash/refs/heads/main/behavior_domain/GFWPatch.txt",
     path: "./rulesets/southernhu/GFWPatch.txt",
   },
 
@@ -160,11 +160,11 @@ function main(config) {
 
     {
       ...groupBaseOption,
-      // 支持的国家中选择延迟最低的，并排除低倍速率节点
+      // 支持的国家中选择延迟最低的,并排除低倍速率节点
       name: "GPTs",
       "type": "url-test",
-      "tolerance": 100,  // 延迟容忍度，超过150ms的节点将被淘汰
-      "fallback": 10,  // 备用节点数量，保留延迟最低的10个节点
+      "tolerance": 100,  // 延迟容忍度,超过150ms的节点将被淘汰
+      "fallback": 10,  // 备用节点数量,保留延迟最低的10个节点
       "interval": 5,  // 每5秒测速一次
       // 美国|新加坡|韩国|澳大利亚|台湾|日本|德国
       "filter": gptRegion,
@@ -184,8 +184,8 @@ function main(config) {
       // 高速节点中选择延迟最低的
       name: "海外常用",
       "type": "url-test",
-      "tolerance": 100,  // 延迟容忍度，超过150ms的节点将被淘汰
-      "fallback": 10,  // 备用节点数量，保留延迟最低的10个节点
+      "tolerance": 100,  // 延迟容忍度,超过150ms的节点将被淘汰
+      "fallback": 10,  // 备用节点数量,保留延迟最低的10个节点
       "interval": 5,  // 每300秒测速一次
       "filter": fastFillter, // 匹配高速节点
       "include-all": true,
