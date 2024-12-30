@@ -122,4 +122,5 @@ PROCESS-NAME,org.telegram.messenger
 +.steamuserimages-a.akamaihd.net
 # 城市天际线2
 +.paradox-interactive.com
-
+# prepomax
++.prepomax.fs.um.si
